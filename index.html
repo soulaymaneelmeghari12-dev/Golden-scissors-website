@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Golden Scissors Barbershop — Larache</title>
+<meta name="description" content="Golden Scissors Barbershop à Larache. Coupes, barbe, rasage traditionnel et soins. Réservez sur WhatsApp." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-inner">
+    <a href="#accueil" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="30" height="30">
+          <path d="M17 8 L38 38" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <path d="M31 8 L10 38" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <circle cx="14" cy="11" r="4.2" stroke="currentColor" stroke-width="2.2" fill="none"/>
+          <circle cx="14" cy="35" r="4.2" stroke="currentColor" stroke-width="2.2" fill="none"/>
+        </svg>
+      </span>
+      <span class="brand-word">Golden <em>Scissors</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services &amp; Tarifs</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#horaires">Horaires</a>
+      <a href="#localisation">Localisation</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-whatsapp" id="navWhatsapp" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.37 4 14.99c0 2.23.62 4.36 1.78 6.24L4 29l8-1.74a13.06 13.06 0 0 0 4.04.64c6.64 0 12.04-5.37 12.04-11.99C28.08 8.37 22.68 3 16.04 3Zm7 17.24c-.3.84-1.7 1.6-2.34 1.7-.6.1-1.36.14-2.2-.14-.5-.16-1.15-.38-1.98-.74-3.49-1.5-5.77-4.97-5.95-5.2-.17-.24-1.42-1.88-1.42-3.6s.9-2.55 1.22-2.9c.3-.34.68-.42.9-.42.23 0 .46 0 .66.01.21.01.5-.08.78.6.3.7 1 2.44 1.1 2.62.1.18.16.4.03.64-.13.24-.2.4-.4.62-.2.22-.42.5-.6.66-.2.2-.4.4-.18.8.23.4 1 1.68 2.16 2.72 1.5 1.34 2.76 1.76 3.16 1.96.4.2.63.16.86-.1.24-.26 1-1.17 1.27-1.57.26-.4.53-.33.9-.2.36.13 2.3 1.1 2.7 1.3.4.2.66.3.76.46.1.18.1 1.02-.2 1.86Z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="accueil">
+  <div class="hero-stripe" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">Barbershop — Larache</p>
+    <h1 class="hero-title">GOLDEN<br><span>SCISSORS</span></h1>
+    <p class="hero-tag">Une coupe nette, une barbe soignée, un rituel taillé pour vous.</p>
+    <div class="hero-actions">
+      <a href="#" id="heroWhatsapp" class="btn btn-gold" target="_blank" rel="noopener">Réserver sur WhatsApp</a>
+      <a href="#services" class="btn btn-ghost">Voir les tarifs</a>
+    </div>
+    <div class="hero-status" id="heroStatus">
+      <span class="dot" id="statusDot"></span>
+      <span id="statusText">Vérification des horaires…</span>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ============ ABOUT STRIP ============ -->
+<section class="about">
+  <div class="about-inner">
+    <p class="about-lead">Chez <strong>Golden Scissors</strong>, chaque coupe est une signature.</p>
+    <p class="about-text">Entre gestes précis, rasoir traditionnel et attention au détail, notre équipe façonne
+      votre style avec exigence — dans une ambiance chaleureuse, en plein cœur de Larache.</p>
+    <div class="about-stats">
+      <div><span class="num">5VG5+8J</span><span class="lbl">Plus Code · Larache</span></div>
+      <div><span class="num">06 56 14 74 01</span><span class="lbl">Réservation directe</span></div>
+      <div><span class="num">Ouvert 7j/7</span><span class="lbl">Voir horaires détaillés</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES & PRICES ============ -->
+<section class="section" id="services">
+  <div class="section-head">
+    <p class="eyebrow">La carte</p>
+    <h2>Services &amp; Tarifs</h2>
+    <p class="section-sub">Des prestations classiques et sur-mesure, prix en dirhams (DH).</p>
+  </div>
+
+  <div class="ticket-grid" id="ticketGrid">
+    <!-- injected by script.js from /api/services, with a static fallback -->
+  </div>
+
+  <p class="price-note">* Tarifs indicatifs, susceptibles d'être mis à jour. Confirmez le prix exact par WhatsApp.</p>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section section-dark" id="galerie">
+  <div class="section-head">
+    <p class="eyebrow">L'atelier</p>
+    <h2>Galerie</h2>
+    <p class="section-sub">Un aperçu du salon — remplacez ces vignettes par vos propres photos quand vous voulez.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <figure class="gallery-tile" data-tone="1">
+      <svg viewBox="0 0 64 64" class="tile-icon"><path d="M20 10 L48 46" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M40 10 L14 46" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round"/><circle cx="18" cy="14" r="5" stroke="currentColor" stroke-width="2.4" fill="none"/><circle cx="18" cy="42" r="5" stroke="currentColor" stroke-width="2.4" fill="none"/></svg>
+      <figcaption>Poste de coupe</figcaption>
+    </figure>
+    <figure class="gallery-tile" data-tone="2">
+      <svg viewBox="0 0 64 64" class="tile-icon"><rect x="14" y="26" width="36" height="8" rx="3" stroke="currentColor" stroke-width="2.4" fill="none"/><path d="M20 34 L20 46 M28 34 L28 48 M36 34 L36 46 M44 34 L44 48" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <figcaption>Rasage traditionnel</figcaption>
+    </figure>
+    <figure class="gallery-tile" data-tone="3">
+      <svg viewBox="0 0 64 64" class="tile-icon"><circle cx="32" cy="24" r="10" stroke="currentColor" stroke-width="2.4" fill="none"/><path d="M14 50c2-10 10-16 18-16s16 6 18 16" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
+      <figcaption>Notre équipe</figcaption>
+    </figure>
+    <figure class="gallery-tile" data-tone="4">
+      <svg viewBox="0 0 64 64" class="tile-icon"><rect x="16" y="12" width="32" height="40" rx="4" stroke="currentColor" stroke-width="2.4" fill="none"/><circle cx="32" cy="30" r="9" stroke="currentColor" stroke-width="2.2" fill="none"/></svg>
+      <figcaption>Ambiance intérieure</figcaption>
+    </figure>
+    <figure class="gallery-tile" data-tone="5">
+      <svg viewBox="0 0 64 64" class="tile-icon"><path d="M12 32c6-14 34-14 40 0" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M18 32v8a14 14 0 0 0 28 0v-8" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
+      <figcaption>Finitions précises</figcaption>
+    </figure>
+    <figure class="gallery-tile" data-tone="6">
+      <svg viewBox="0 0 64 64" class="tile-icon"><rect x="10" y="18" width="44" height="30" rx="2" stroke="currentColor" stroke-width="2.4" fill="none"/><path d="M10 28h44 M22 18v30 M38 18v30" stroke="currentColor" stroke-width="2" /></svg>
+      <figcaption>Façade Golden Scissors</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ HOURS ============ -->
+<section class="section" id="horaires">
+  <div class="section-head">
+    <p class="eyebrow">Ouverture</p>
+    <h2>Horaires</h2>
+    <p class="section-sub">Passage libre ou sur rendez-vous.</p>
+  </div>
+
+  <div class="hours-panel">
+    <table class="hours-table" id="hoursTable">
+      <tbody>
+        <!-- injected by script.js from /api/hours, with a static fallback -->
+      </tbody>
+    </table>
+    <div class="hours-status" id="hoursStatusPanel">
+      <span class="dot" id="statusDot2"></span>
+      <span id="statusText2">Vérification des horaires…</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section class="section section-dark" id="localisation">
+  <div class="section-head">
+    <p class="eyebrow">Nous trouver</p>
+    <h2>Localisation</h2>
+    <p class="section-sub">Larache 92000 — Plus Code 5VG5+8J</p>
+  </div>
+
+  <div class="location-grid">
+    <div class="map-frame">
+      <iframe
+        title="Golden Scissors Barbershop — carte"
+        src="https://www.google.com/maps?q=Golden+Scissors+Barbershop+Larache&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="location-card">
+      <h3>Golden Scissors Barbershop</h3>
+      <ul class="location-list">
+        <li>
+          <span class="li-label">Adresse</span>
+          <span>Larache 92000, Maroc — 5VG5+8J</span>
+        </li>
+        <li>
+          <span class="li-label">Téléphone</span>
+          <a href="tel:0656147401">06 56 14 74 01</a>
+        </li>
+        <li>
+          <span class="li-label">Instagram</span>
+          <a href="https://www.instagram.com/golden.scissors.26" target="_blank" rel="noopener">@golden.scissors.26</a>
+        </li>
+      </ul>
+      <a href="#" id="locWhatsapp" class="btn btn-gold btn-block" target="_blank" rel="noopener">Discuter sur WhatsApp</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Golden+Scissors+Barbershop+Larache" target="_blank" rel="noopener" class="btn btn-ghost btn-block">Itinéraire</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section class="section" id="reserver">
+  <div class="section-head">
+    <p class="eyebrow">Réservation</p>
+    <h2>Prenez rendez-vous</h2>
+    <p class="section-sub">Envoyez-nous votre demande, ou passez directement par WhatsApp pour une réponse rapide.</p>
+  </div>
+
+  <form class="booking-form" id="bookingForm">
+    <div class="form-row">
+      <label>
+        <span>Nom</span>
+        <input type="text" name="name" required placeholder="Votre nom" />
+      </label>
+      <label>
+        <span>Téléphone</span>
+        <input type="tel" name="phone" required placeholder="06 XX XX XX XX" />
+      </label>
+    </div>
+    <div class="form-row">
+      <label>
+        <span>Service souhaité</span>
+        <select name="service" id="serviceSelect">
+          <option value="">— Sélectionner —</option>
+        </select>
+      </label>
+      <label>
+        <span>Date souhaitée</span>
+        <input type="date" name="preferredDate" />
+      </label>
+    </div>
+    <label class="full">
+      <span>Message (optionnel)</span>
+      <textarea name="message" rows="3" placeholder="Précisions, créneau préféré…"></textarea>
+    </label>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-gold">Envoyer la demande</button>
+      <a href="#" id="formWhatsapp" class="btn btn-ghost" target="_blank" rel="noopener">Ou écrire sur WhatsApp</a>
+    </div>
+    <p class="form-feedback" id="formFeedback" role="status"></p>
+  </form>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="26" height="26">
+          <path d="M17 8 L38 38" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <path d="M31 8 L10 38" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <circle cx="14" cy="11" r="4.2" stroke="currentColor" stroke-width="2.2" fill="none"/>
+          <circle cx="14" cy="35" r="4.2" stroke="currentColor" stroke-width="2.2" fill="none"/>
+        </svg>
+      </span>
+      <span>Golden Scissors</span>
+    </div>
+    <nav class="footer-nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Tarifs</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#horaires">Horaires</a>
+      <a href="#localisation">Localisation</a>
+    </nav>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/golden.scissors.26" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+      <a href="tel:0656147401" aria-label="Téléphone">Tel</a>
+    </div>
+  </div>
+  <p class="footer-copy">© <span id="year"></span> Golden Scissors Barbershop — Larache. Tous droits réservés.</p>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a href="#" id="floatWhatsapp" class="float-whatsapp" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.37 4 14.99c0 2.23.62 4.36 1.78 6.24L4 29l8-1.74a13.06 13.06 0 0 0 4.04.64c6.64 0 12.04-5.37 12.04-11.99C28.08 8.37 22.68 3 16.04 3Zm7 17.24c-.3.84-1.7 1.6-2.34 1.7-.6.1-1.36.14-2.2-.14-.5-.16-1.15-.38-1.98-.74-3.49-1.5-5.77-4.97-5.95-5.2-.17-.24-1.42-1.88-1.42-3.6s.9-2.55 1.22-2.9c.3-.34.68-.42.9-.42.23 0 .46 0 .66.01.21.01.5-.08.78.6.3.7 1 2.44 1.1 2.62.1.18.16.4.03.64-.13.24-.2.4-.4.62-.2.22-.42.5-.6.66-.2.2-.4.4-.18.8.23.4 1 1.68 2.16 2.72 1.5 1.34 2.76 1.76 3.16 1.96.4.2.63.16.86-.1.24-.26 1-1.17 1.27-1.57.26-.4.53-.33.9-.2.36.13 2.3 1.1 2.7 1.3.4.2.66.3.76.46.1.18.1 1.02-.2 1.86Z"/></svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
