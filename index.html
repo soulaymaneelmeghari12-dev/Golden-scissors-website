@@ -10,9 +10,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+
+<div class="progress-bar" id="progressBar"></div>
 
 <!-- ============ NAV ============ -->
 <header class="site-header" id="siteHeader">
@@ -52,6 +54,7 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="accueil">
+  <div class="hero-photo" id="heroPhoto" style="background-image:url('img/hero.jpg')"></div>
   <div class="hero-stripe" aria-hidden="true"></div>
   <div class="hero-inner">
     <p class="eyebrow">Barbershop — Larache</p>
@@ -72,20 +75,26 @@
 <!-- ============ ABOUT STRIP ============ -->
 <section class="about">
   <div class="about-inner">
-    <p class="about-lead">Chez <strong>Golden Scissors</strong>, chaque coupe est une signature.</p>
-    <p class="about-text">Entre gestes précis, rasoir traditionnel et attention au détail, notre équipe façonne
-      votre style avec exigence — dans une ambiance chaleureuse, en plein cœur de Larache.</p>
-    <div class="about-stats">
-      <div><span class="num">5VG5+8J</span><span class="lbl">Plus Code · Larache</span></div>
-      <div><span class="num">06 56 14 74 01</span><span class="lbl">Réservation directe</span></div>
-      <div><span class="num">Ouvert 7j/7</span><span class="lbl">Voir horaires détaillés</span></div>
+    <div class="about-photo reveal">
+      <img src="img/interior.jpg" alt="Enseigne Golden Scissors Barbershop" loading="lazy">
+      <span class="about-photo-tag">Golden Scissors — Larache</span>
+    </div>
+    <div class="about-copy">
+      <p class="about-lead reveal">Chez <strong>Golden Scissors</strong>, chaque coupe est une signature.</p>
+      <p class="about-text reveal">Entre gestes précis, rasoir traditionnel et attention au détail, notre équipe façonne
+        votre style avec exigence — dans une ambiance chaleureuse, en plein cœur de Larache.</p>
+      <div class="about-stats reveal">
+        <div><span class="num">5VG5+8J</span><span class="lbl">Plus Code · Larache</span></div>
+        <div><span class="num">06 56 14 74 01</span><span class="lbl">Réservation directe</span></div>
+        <div><span class="num">Ouvert 7j/7</span><span class="lbl">Voir horaires détaillés</span></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============ SERVICES & PRICES ============ -->
 <section class="section" id="services">
-  <div class="section-head">
+  <div class="section-head reveal">
     <p class="eyebrow">La carte</p>
     <h2>Services &amp; Tarifs</h2>
     <p class="section-sub">Des prestations classiques et sur-mesure, prix en dirhams (DH).</p>
@@ -100,34 +109,42 @@
 
 <!-- ============ GALLERY ============ -->
 <section class="section section-dark" id="galerie">
-  <div class="section-head">
+  <div class="section-head reveal">
     <p class="eyebrow">L'atelier</p>
     <h2>Galerie</h2>
-    <p class="section-sub">Un aperçu du salon — remplacez ces vignettes par vos propres photos quand vous voulez.</p>
+    <p class="section-sub">Un aperçu du salon en images — cliquez sur une photo pour l'agrandir.</p>
   </div>
 
-  <div class="gallery-grid">
-    <figure class="gallery-tile" data-tone="1">
-      <svg viewBox="0 0 64 64" class="tile-icon"><path d="M20 10 L48 46" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M40 10 L14 46" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round"/><circle cx="18" cy="14" r="5" stroke="currentColor" stroke-width="2.4" fill="none"/><circle cx="18" cy="42" r="5" stroke="currentColor" stroke-width="2.4" fill="none"/></svg>
-      <figcaption>Poste de coupe</figcaption>
+  <div class="gallery-grid" id="galleryGrid">
+    <figure class="gallery-tile gallery-photo reveal" data-tone="1">
+      <button class="tile-media" type="button" data-full="img/haircut2.jpg" aria-label="Agrandir : Précision au clipper">
+        <img src="img/haircut2.jpg" alt="Finition au clipper sur les contours" loading="lazy">
+      </button>
+      <figcaption>Précision au clipper</figcaption>
     </figure>
-    <figure class="gallery-tile" data-tone="2">
-      <svg viewBox="0 0 64 64" class="tile-icon"><rect x="14" y="26" width="36" height="8" rx="3" stroke="currentColor" stroke-width="2.4" fill="none"/><path d="M20 34 L20 46 M28 34 L28 48 M36 34 L36 46 M44 34 L44 48" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-      <figcaption>Rasage traditionnel</figcaption>
+    <figure class="gallery-tile gallery-photo reveal" data-tone="2">
+      <button class="tile-media" type="button" data-full="img/soindevisage.jpg" aria-label="Agrandir : Soin à la serviette chaude">
+        <img src="img/soindevisage.jpg" alt="Soin du visage à la serviette chaude" loading="lazy">
+      </button>
+      <figcaption>Serviette chaude &amp; soin</figcaption>
     </figure>
-    <figure class="gallery-tile" data-tone="3">
-      <svg viewBox="0 0 64 64" class="tile-icon"><circle cx="32" cy="24" r="10" stroke="currentColor" stroke-width="2.4" fill="none"/><path d="M14 50c2-10 10-16 18-16s16 6 18 16" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
-      <figcaption>Notre équipe</figcaption>
+    <figure class="gallery-tile gallery-photo reveal" data-tone="3">
+      <button class="tile-media" type="button" data-full="img/haircut1.jpg" aria-label="Agrandir : Le geste du barbier">
+        <img src="img/haircut1.jpg" alt="Barbier réalisant une coupe" loading="lazy">
+      </button>
+      <figcaption>Le geste du barbier</figcaption>
     </figure>
-    <figure class="gallery-tile" data-tone="4">
-      <svg viewBox="0 0 64 64" class="tile-icon"><rect x="16" y="12" width="32" height="40" rx="4" stroke="currentColor" stroke-width="2.4" fill="none"/><circle cx="32" cy="30" r="9" stroke="currentColor" stroke-width="2.2" fill="none"/></svg>
-      <figcaption>Ambiance intérieure</figcaption>
+    <figure class="gallery-tile gallery-photo reveal" data-tone="4">
+      <button class="tile-media" type="button" data-full="img/hero.jpg" aria-label="Agrandir : Outils du métier">
+        <img src="img/hero.jpg" alt="Ciseaux et tondeuses du salon" loading="lazy">
+      </button>
+      <figcaption>Outils du métier</figcaption>
     </figure>
-    <figure class="gallery-tile" data-tone="5">
+    <figure class="gallery-tile reveal" data-tone="5">
       <svg viewBox="0 0 64 64" class="tile-icon"><path d="M12 32c6-14 34-14 40 0" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M18 32v8a14 14 0 0 0 28 0v-8" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
       <figcaption>Finitions précises</figcaption>
     </figure>
-    <figure class="gallery-tile" data-tone="6">
+    <figure class="gallery-tile reveal" data-tone="6">
       <svg viewBox="0 0 64 64" class="tile-icon"><rect x="10" y="18" width="44" height="30" rx="2" stroke="currentColor" stroke-width="2.4" fill="none"/><path d="M10 28h44 M22 18v30 M38 18v30" stroke="currentColor" stroke-width="2" /></svg>
       <figcaption>Façade Golden Scissors</figcaption>
     </figure>
@@ -136,13 +153,13 @@
 
 <!-- ============ HOURS ============ -->
 <section class="section" id="horaires">
-  <div class="section-head">
+  <div class="section-head reveal">
     <p class="eyebrow">Ouverture</p>
     <h2>Horaires</h2>
     <p class="section-sub">Passage libre ou sur rendez-vous.</p>
   </div>
 
-  <div class="hours-panel">
+  <div class="hours-panel reveal">
     <table class="hours-table" id="hoursTable">
       <tbody>
         <!-- injected by script.js from /api/hours, with a static fallback -->
@@ -157,14 +174,14 @@
 
 <!-- ============ LOCATION ============ -->
 <section class="section section-dark" id="localisation">
-  <div class="section-head">
+  <div class="section-head reveal">
     <p class="eyebrow">Nous trouver</p>
     <h2>Localisation</h2>
     <p class="section-sub">Larache 92000 — Plus Code 5VG5+8J</p>
   </div>
 
   <div class="location-grid">
-    <div class="map-frame">
+    <div class="map-frame reveal">
       <iframe
         title="Golden Scissors Barbershop — carte"
         src="https://www.google.com/maps?q=Golden+Scissors+Barbershop+Larache&output=embed"
@@ -173,7 +190,7 @@
       </iframe>
     </div>
 
-    <div class="location-card">
+    <div class="location-card reveal">
       <h3>Golden Scissors Barbershop</h3>
       <ul class="location-list">
         <li>
@@ -197,13 +214,13 @@
 
 <!-- ============ BOOKING ============ -->
 <section class="section" id="reserver">
-  <div class="section-head">
+  <div class="section-head reveal">
     <p class="eyebrow">Réservation</p>
     <h2>Prenez rendez-vous</h2>
     <p class="section-sub">Envoyez-nous votre demande, ou passez directement par WhatsApp pour une réponse rapide.</p>
   </div>
 
-  <form class="booking-form" id="bookingForm">
+  <form class="booking-form reveal" id="bookingForm">
     <div class="form-row">
       <label>
         <span>Nom</span>
@@ -273,6 +290,12 @@
   <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.37 4 14.99c0 2.23.62 4.36 1.78 6.24L4 29l8-1.74a13.06 13.06 0 0 0 4.04.64c6.64 0 12.04-5.37 12.04-11.99C28.08 8.37 22.68 3 16.04 3Zm7 17.24c-.3.84-1.7 1.6-2.34 1.7-.6.1-1.36.14-2.2-.14-.5-.16-1.15-.38-1.98-.74-3.49-1.5-5.77-4.97-5.95-5.2-.17-.24-1.42-1.88-1.42-3.6s.9-2.55 1.22-2.9c.3-.34.68-.42.9-.42.23 0 .46 0 .66.01.21.01.5-.08.78.6.3.7 1 2.44 1.1 2.62.1.18.16.4.03.64-.13.24-.2.4-.4.62-.2.22-.42.5-.6.66-.2.2-.4.4-.18.8.23.4 1 1.68 2.16 2.72 1.5 1.34 2.76 1.76 3.16 1.96.4.2.63.16.86-.1.24-.26 1-1.17 1.27-1.57.26-.4.53-.33.9-.2.36.13 2.3 1.1 2.7 1.3.4.2.66.3.76.46.1.18.1 1.02-.2 1.86Z"/></svg>
 </a>
 
-<script src="script.js"></script>
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">&times;</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
